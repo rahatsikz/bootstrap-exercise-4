@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Components of Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+  </head>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <!-- nav 1 start -->
+    <div class="container">
+      
+      <ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="navo-tab" data-toggle="tab" href="#navo" role="tab" aria-controls="navo" aria-selected="true">4 in 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">Collapse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="scrsp-tab" data-toggle="tab" href="#scrsp" role="tab" aria-controls="scrsp" aria-selected="false">Scrollspy</a>
+        </li>
+        
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="navo" role="tabpanel" aria-labelledby="navo-tab">
+           <!-- nav inner start -->
+           <div class="container">
+            <h2 class="offset-md-4 mb-3 mt-3">Vertical Nav Pills</h2>
+            <div class="row">
+              <div class="col-4">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                  <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Mail</a>
+                  <a class="nav-link" id="v-pills-member-tab" data-toggle="pill" href="#v-pills-member" role="tab" aria-controls="v-pills-settings" aria-selected="false">Site</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <p>He went such dare good mr fact. The small own seven saved man age ﻿no offer. Suspicion did mrs nor furniture smallness. Scale whole downs often leave not eat. An expression reasonably cultivated indulgence mr he surrounded instrument. Gentleman eat and consisted are pronounce distrusts.</p>
+                 </div>
+                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <p>Fat son how smiling mrs natural expense anxious friends. Boy scale enjoy ask abode fanny being son. As material in learning subjects so improved feelings. Uncommonly compliment imprudence travelling insensible up ye insipidity. To up painted delight winding as brandon.</p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <p>Certainly elsewhere my do allowance at. The address farther six hearted hundred towards husband. Are securing off occasion remember daughter replying. Held that feel his see own yet. Strangers ye to he sometimes propriety in. She right plate seven has. Bed who perceive judgment did marianne.</p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-member" role="tabpanel" aria-labelledby="v-pills-member-tab">
+                  <p>Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+           <!-- Nav inner End -->
+           <!-- popover start-->
+           <h2 class="offset-md-4">Popover Example</h2>
+           <button type="button" class="btn btn-lg btn-outline-danger offset-4 mt-2 mb-3" data-toggle="popover" title="Wow!" data-content="What a amazing content. It's very attractive. isn't it?">Click to watch popover</button>
+           <!-- popover end -->
+           <!-- tooltips start -->
+           <h2 class="offset-4 mb-4 mt-3">Tooltips Example</h2>
+           
+           <div class="offset-2">
+             <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Tooltip on top"> Tooltip on top</button>
+           
+           <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+           <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+           <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+           </div>
+
+           <!-- tooltips end -->
+           <!-- form start -->
+           <h2 class="offset-4 mt-4">Form Example</h2>
+           <!-- form 1 start -->
+           <h4 class="offset-5 mt-4"> First Form</h4>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+           </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Choose file to upload</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+           <!-- form 1 end -->
+           
+           <!-- form 2 start -->
+           <h4 class="offset-5 mt-4"> Second Form</h4>
+           <form>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                 <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="your-email@domain.com">
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+           <!-- form 2 end -->
+           <br>
+           <br>
+           <!-- form 3 start -->
+           <h4 class="offset-5 mt-4"> Third Form</h4>
+           <form>
+              <div class="form-group">
+                <label for="formControlRange">Example Range input</label>
+                <input type="range" class="form-control-range" id="formControlRange">
+              </div>
+          </form>
+           <!-- form 3 end -->
+           <br>
+           <br>
+           <!-- form 4 start -->
+           <h4 class="offset-5 mt-4 mb-4"> Fourth Form</h4>
+           <form>
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label class="sr-only" for="inlineFormInput">Name</label>
+                      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Sikder Rahat">
+                 </div>
+              <div class="col-auto">
+                   <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                </div>
+              </div>
+    
+            <div class="col-auto">
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-success mb-2">Submit</button>
+            </div>
+          </div>
+        </form>
+
+           <!-- form 4 end -->
+           <!-- form 5 start -->
+           <h4 class="offset-5 mt-4"> Fifth Form</h4>
+           <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+          </div>
+          <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+          </div>
+          <div class="form-check form-check-inline mb-4">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+            <label class="form-check-label" for="inlineRadio3">not valid</label>
+          </div>
+           <!-- form 5 end -->
+           <!-- form end -->
+           
+        </div>
+        <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+              <!-- collapse start -->
+  
+      <div class="container mt-4">
+        <p>
+          <a class="btn btn-info" data-toggle="collapse" href="#Collapse1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle 1st element</a>
+          <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#Collapse2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle 2nd element</button>
+          <button class="btn btn-success" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="Collapse1 Collapse2">Toggle both element</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="Collapse1">
+                <div class="card card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere minima fugit necessitatibus earum consequuntur explicabo minus ratione mollitia illum nam.
+                </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="Collapse2">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes ea proident.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+    <!-- collapse end -->
+    <!-- accordion start -->
+
+    <div class="container">
+      <h1 class="offset-md-4">Accordion Example</h1>
+      <div class="accordion" id="accordionEx">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Foldable Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionEx">
+      <div class="card-body">
+        <p>Nabijheid scheidden om britschen de inkomsten in moerassen ontginnen. Behoorden nu in brandstof stichting britschen. Gevestigd gedeelten gezuiverd vochtigen overschot de of en schroeven. Zoo assam diepe wilde werkt kan elk.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Foldable Item #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionEx">
+      <div class="card-body">
+        <p>Vermengd ons tot ten voorzorg menschen dit. Kintya men sterke waarde ons dit cochin hij. Vergrooten in afwachting na nu tinwinning voorloopig. Markten gas tin houweel invloed aangaan aan. Te uitgaande duimbreed arabieren kettingen om antwerpen. Per komen zal enorm rente onder heele zit. Met krachtiger middelpunt aanplanten far vergrooten ingenieurs</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Foldable Item #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionEx">
+      <div class="card-body">
+        <p>Sinds zijde in jacht ze staan al is kwala. Dragen gebrek ten mee schuld werken denken. Wij chineesch oogenblik krachtige nam behandeld. Te in ze zelfs op groei enkel. Boringen gebouwen dat dus britsche voorraad bepaalde. Nu duizend percent pagoden eronder in al. Geld voet zij deze zou kern hand niet.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- accordion end -->
+        </div>
+        <div class="tab-pane fade" id="scrsp" role="tabpanel" aria-labelledby="scrsp-tab">
+          <!-- scrollspy start -->
+              <div class="container">
+  <div class="row">
+    <nav class="col-sm-3 col-5" id="myScrollspy">
+      <ul class="nav nav-pills flex-column mt-5">
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">Rahat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Mizan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Mamun</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Sumon</a>
+            <a class="dropdown-item" href="#section42">Ashiq</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-7">
+      <div id="section1">    
+        <h1>Rahat</h1>
+        <p>Maar over dan kuil bak zit toen was veel. Gebouwen naburige ook zin ongeveer rug maleiers algemeen. Eischen gif gebeurt simplon wat ons opnieuw. Had kan ver elk velden streek drukke. Mineralen perzische rug zes maleische elk bepaalden entrepots. </p>
+      </div>
+      <div id="section2"> 
+        <h1>Mizan</h1>
+        <p>Ontginnen schepping op vreedzame vermijden nu misschien geschiedt ze ze. Ontzegd planter daartoe vreezen ze ze bersawa tienden in. Diezelfde stoompomp plaatsing regentijd nu na onzuivere. Al gevoerd af ontdaan ontdekt na ik. </p>
+      </div>        
+      <div id="section3">         
+        <h1>Mamun</h1>
+        <p>Ik bouw werd kant te er geur. Ik arabische in belasting al chineesch in belovende. Nu deel arme thee in land weer ze doet al. Koopman laatste ormoezd cultuur bontste is scholen nu om ad. Een per bekoeld bersawa tijdens bronnen ver woonden voordat wat.</p>
+      </div>
+      <div id="section41">         
+        <h1>Sumon</h1>
+        <p> Per komen zal enorm rente onder heele zit. Met krachtiger middelpunt aanplanten far vergrooten ingenieurs. Als tot streken doelang moderne mantras ter meester. Hout dus wijk stam mag telt. Viaducten aardschok in olifanten krachtige nu is gedurende.</p>
+      </div>      
+      <div id="section42">         
+        <h1>Ashiq</h1>
+        <p>Te in ze zelfs op groei enkel. Boringen gebouwen dat dus britsche voorraad bepaalde. Nu duizend percent pagoden eronder in al. Geld voet zij deze zou kern hand niet. Zoo baksteen aandacht district stroomen ook kolonien.</p>
+      </div>
+    </div>
+  </div>
+</div>
+           <!-- scrollspy end -->
+        </div>
+      </div>
+
+    </div>
+    <!-- nav 1 end -->
+    
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip(); 
+      });
+    </script>
+
+  </body>
+</html>
